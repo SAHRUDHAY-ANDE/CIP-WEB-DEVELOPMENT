@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banking Website</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0b1c2c;
+    }
+    
+    h2 {
+      text-align: center;
+     
+    }
+    
+    header {
+      background-color: #333;
+      padding: 10px 0;
+    }
+    
+    nav {
+      display: flex;
+      justify-content: center;
+    }
+    
+    nav ul {
+      list-style: none;
+      margin: 15px;
+      margin-right: 20px;
+      padding: 0px;
+      font-size: larger;
+    }
+    
+    nav li {
+      display: inline;
+      margin-right: 20px;
+    }
+    
+    nav li a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    
+    nav li a:hover {
+      background-color: #555;
+    }
+    
+   
+    .description-section {
+      padding: 50px 0;
+      text-align: center;
+      background-color: #0b1c2c;
+    }
+    
+    .description-section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    
+    .description-section p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    
+    .contact-section {
+      background-color: #f9f9f9;
+      padding: 50px 0;
+      text-align: center;
+    }
+    
+    .contact-section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    
+    .contact-section p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    
+    .contact-section a {
+      display: inline-block;
+      background-color: #0b1c2c;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 18px;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .contact-section a:hover {
+      background-color: #45a049;
+    }
+    
+    footer {
+      background-color: #000000;
+      text-align: center;
+      padding: 10px 0;
+    }
+    
+    footer p{
+      color: #ffffff;
+    }
+    .welcome-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.image-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image-overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.welcome-section .overlay-content {
+  opacity: 1;
+}
+
+.overlay-content h2 {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.overlay-content p {
+  font-size: 25px;
+  margin-bottom: 30px;
+  color: #b7c7dd;
+}
+
+.cta-button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #45a049;
+}
+.offers-section {
+  background-color: #0b1c2c;
+  padding: 50px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1{
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #b7c7dd;
+  letter-spacing: 2px;
+}
+
+.offer {
+  margin-bottom: 40px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.offer:hover {
+  transform: translateY(-5px);
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #505f72;
+}
+
+p {
+  font-size: 18px;
+  color: #666;
+}
+
+.contact-section h2{
+  color:black;
+}
+</style>
+
+</head>
+<body>
+  <h2>KEY BANK</h2>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html"><span>Home</span></a></li>
+        <li><a href="accounts.html">Accounts</a></li>
+        <li><a href="transactions.html">Transactions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="welcome-section">
+    <div class="image-overlay">
+      <img src="abcd.jpeg" alt="Welcome Image">
+      <div class="overlay-content">
+        <h1>Welcome to our Bank</h1>
+        <p>Experience the power of modern banking.</p>
+        <a href="#a" class="cta-button">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="description-section" id="a">
+    <h2>About Our Bank</h2>
+    <section class="offers-section">
+      <div class="container">
+        <h2>Bank Offers and Policies</h2>
+        <div class="offer">
+          <h3>Special Savings Account</h3>
+          <p>Open a Special Savings Account and enjoy high interest rates on your deposits. Start saving today!</p>
+        </div>
+        <div class="offer">
+          <h3>Flexible Loan Options</h3>
+          <p>Get access to flexible loan options tailored to your needs. Borrow with confidence and repay conveniently.</p>
+        </div>
+        <div class="offer">
+          <h3>Secure Online Banking</h3>
+          <p>Experience secure and convenient online banking with advanced encryption and multi-factor authentication.</p>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section class="contact-section">
+    <h2>Contact Support</h2>
+    <p>For any assistance or queries, our support team is available 24/7.</p>
+    <a href="tel:+123456789">Call Us</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Banking Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
